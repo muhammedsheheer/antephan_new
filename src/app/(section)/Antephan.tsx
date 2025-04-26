@@ -4,7 +4,12 @@ import Image from "next/image";
 
 const Antephan: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#079EBC] px-4 py-12 md:px-20 md:py-24">
+    <section className="relative h-full w-full bg-[#079EBC] px-4 py-12 md:px-20 md:py-24">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="flex flex-col gap-8 md:gap-20">
         <div>
           <h1 className="text-center font-playfair text-4xl font-[400] uppercase tracking-[3px] text-[#fff] md:text-7xl">
@@ -24,7 +29,7 @@ const Antephan: React.FC = () => {
               width={281}
               height={74}
               alt="logo"
-              className="h-auto w-full"
+              className="z-50 h-auto w-full"
             />
             <h4
               className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
@@ -45,7 +50,7 @@ const Antephan: React.FC = () => {
               width={281}
               height={74}
               alt="logo"
-              className="h-auto w-full"
+              className="z-50 h-auto w-full"
             />
             <h4
               className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
@@ -66,7 +71,7 @@ const Antephan: React.FC = () => {
               width={281}
               height={74}
               alt="logo"
-              className="h-auto w-full"
+              className="z-50 h-auto w-full"
             />
             <h4
               className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
