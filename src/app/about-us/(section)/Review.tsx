@@ -28,6 +28,11 @@ const Reviews = () => {
 
   return (
     <section className="relative flex h-full w-full justify-center bg-[#fff] pb-10 md:bg-[#079EBC]">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="flex h-full w-full flex-col items-center justify-center gap-4 rounded-t-full py-12 md:py-44 md:pt-24">
         <div className="flex h-full w-full flex-col items-center justify-center gap-2 lg:gap-4">
           <div className="flex flex-col items-center justify-center gap-2">
@@ -106,7 +111,7 @@ const Reviews = () => {
         </div>
         {/* mobile screen */}
         <div className="relative flex w-full items-center justify-center md:hidden">
-          <div className="absolute top-2 z-50">
+          <div className="absolute top-4 z-50">
             <Image
               src={"/images/home/highlights/Frame.png"}
               width={281}
@@ -117,7 +122,7 @@ const Reviews = () => {
           </div>
           {reviews && (
             <Carousel className="w-full px-0 md:px-60">
-              <CarouselContent className="ml-2 flex w-full justify-center gap-0">
+              <CarouselContent className="flex w-full justify-center gap-2">
                 {reviews
                   .filter((review) => review.rating >= 4)
                   .map((review, index) => (
