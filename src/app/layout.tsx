@@ -13,12 +13,13 @@ import {
   Cormorant,
   Playfair_Display,
   Marcellus_SC,
+  Montserrat,
 } from "next/font/google";
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Mevlana",
-  description: "Mevlana",
+  title: "ANTEPHAN",
+  description: "ANTEPHAN",
   icons: [{ rel: "icon", url: "/images/home/hero/logo.png", sizes: "11x11" }],
 };
 
@@ -43,6 +44,12 @@ const sofia_sans = Sofia_Sans_Condensed({
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
   weight: ["400", "500", "600", "700", "800"],
 });
 
@@ -93,6 +100,7 @@ export default function RootLayout({
           playfair.variable,
           cormorant.variable,
           inter.variable,
+          montserrat.variable,
         )}
       >
         <Providers>{children}</Providers>

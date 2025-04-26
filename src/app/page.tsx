@@ -8,6 +8,9 @@ import Story from "./(section)/Story";
 import Reserve from "./(section)/Reserve";
 import Follow from "./(section)/Follow";
 import Highlights from "./(section)/Highlights";
+import Antephan from "./(section)/Antephan";
+import Gallery from "./(section)/Gallery";
+import Menu from "./(section)/Menu";
 
 export default function HomePage() {
   return (
@@ -15,11 +18,14 @@ export default function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Navbar position="absolute" />
         <Hero />
-        <Special />
         <Story />
+        <Antephan />
         <Highlights />
-        <Reserve />
+        <Special />
+        <Menu />
         <Reviews />
+        <Gallery />
+        <Reserve />
         <Follow />
         <Footer />
       </div>

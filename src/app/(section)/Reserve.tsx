@@ -6,64 +6,104 @@ import { motion } from "framer-motion";
 
 const Reserve: React.FC = () => {
   return (
-    <section className="h-full w-full">
-      <div className="relative h-full w-full">
-        <div className="absolute bottom-0 right-1/2 w-full translate-x-1/2 px-4 md:w-[550px]">
-          <motion.div
-            className="flex h-[450px] w-full flex-col items-center justify-center gap-4 bg-[url('/images/home/reserve/frame.png')] bg-cover bg-center px-6 py-14 md:h-[750px] md:w-[650px] md:py-20"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-          >
-            <motion.h1
-              className="mt-16 text-center font-marcellus text-4xl font-[400] uppercase text-[#fff] md:mt-28 md:text-6xl"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: false }}
-            >
-              Reserve <br />
-              Your Table
-            </motion.h1>
-
-            <motion.p
-              className="w-full max-w-[500px] text-center font-playfair text-sm font-[400] text-[#fff] md:text-base"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: false }}
-            >
-              Secure your spot at Mevlana and embark on a journey of rich
-              flavors and warm hospitality. From sizzling kebabs to aromatic
-              Turkish coffee, every dish is crafted with authenticity and
-              passion. Book your table now and experience the true essence of
-              Turkish cuisine!
-            </motion.p>
-
-            <motion.div
-              className="md:mt-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6 }}
-              viewport={{ once: false }}
-            >
-              <div className="flex items-center justify-center">
-                <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:px-7 md:py-7 md:text-sm">
-                  <Link href={"/table-booking"}>Book Now</Link>
-                </Button>
-              </div>
-            </motion.div>
-          </motion.div>
+    <section className="h-full w-full bg-[#000] pt-12 md:pt-24">
+      {/* big scren */}
+      <div className="relative hidden h-full w-full flex-col items-center justify-center gap-10 md:flex md:gap-16">
+        <div className="absolute bottom-60 right-0">
+          <Image
+            src={"/images/home/reserve/image2b.png"}
+            width={281}
+            height={74}
+            alt="image"
+            className="z-40 h-[270px] w-full"
+          />
         </div>
-
-        <Image
-          src={"/images/home/reserve/image.png"}
-          width={281}
-          height={74}
-          alt="image"
-          className="h-[500px] w-full object-cover md:h-full"
-        />
+        <div className="absolute left-12 top-40">
+          <div className="flex flex-col gap-4 md:gap-6">
+            <p className="w-full max-w-[400px] font-poppins text-sm font-[300] tracking-[1.28px] text-[#fff] md:text-base">
+              Experience the sweet side of tradition book your table today and
+              indulge in freshly made baklava and warm künefe straight from our
+              kitchen. <br /> Walk-ins are welcome, but a reservation ensures
+              your seat at our dessert haven.
+            </p>
+            <div>
+              <Button className="rounded-none bg-[#fff] px-6 py-6 text-center font-poppins text-sm font-[500] uppercase tracking-[1.276px] text-[#000] hover:bg-[#dcd5d5] md:px-7 md:py-6">
+                <Link href={"/table-booking"}>Reserve</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="absolute -left-6 bottom-0 right-0 z-50 overflow-hidden">
+          <h1 className="font-playfair text-7xl font-[400] tracking-[8px] text-[#fff] md:text-[300px] md:leading-[250px] md:tracking-[18px]">
+            ANTEPHAN
+          </h1>
+        </div>
+        <div className="flex items-center justify-center">
+          <h1 className="text-center font-playfair text-4xl font-[400] uppercase tracking-[3px] text-[#fff] md:text-7xl">
+            RESERVE YOUR TABLE
+          </h1>
+        </div>
+        <div>
+          <motion.img
+            src={"/images/home/reserve/image1b.png"}
+            width={281}
+            height={74}
+            alt="image"
+            className="z-40 h-[600px] w-full"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          />
+        </div>
+      </div>
+      {/* mobile screen */}
+      <div className="relative flex flex-col gap-10 md:hidden">
+        <div className="absolute bottom-16 right-0">
+          <Image
+            src={"/images/home/reserve/image2s.png"}
+            width={281}
+            height={74}
+            alt="image"
+            className="z-40 h-[80px] w-full"
+          />
+        </div>
+        <div className="absolute -left-6 bottom-0 right-0 z-50 overflow-hidden">
+          <h1 className="font-playfair text-7xl font-[400] tracking-[8px] text-[#fff] md:text-[300px] md:leading-[250px] md:tracking-[18px]">
+            ANTEPHAN
+          </h1>
+        </div>
+        <div>
+          <h1 className="text-center font-playfair text-4xl font-[400] uppercase tracking-[3px] text-[#fff] md:text-7xl">
+            RESERVE YOUR TABLE
+          </h1>
+        </div>
+        <div className="flex flex-col gap-4 px-4 md:gap-6">
+          <p className="w-full max-w-[400px] font-poppins text-sm font-[300] tracking-[1.28px] text-[#fff] md:text-base">
+            Experience the sweet side of tradition book your table today and
+            indulge in freshly made baklava and warm künefe straight from our
+            kitchen. <br /> Walk-ins are welcome, but a reservation ensures your
+            seat at our dessert haven.
+          </p>
+          <div>
+            <Button className="rounded-none bg-[#fff] px-6 py-6 text-center font-poppins text-sm font-[500] uppercase tracking-[1.276px] text-[#000] hover:bg-[#dcd5d5] md:px-7 md:py-6">
+              <Link href={"/table-booking"}>Reserve</Link>
+            </Button>
+          </div>
+        </div>
+        <div className="px-28">
+          <motion.img
+            src={"/images/home/reserve/image1s.png"}
+            width={281}
+            height={74}
+            alt="image"
+            className="z-40 h-auto w-full"
+            initial={{ opacity: 0, y: 50, scale: 0.8 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          />
+        </div>
       </div>
     </section>
   );

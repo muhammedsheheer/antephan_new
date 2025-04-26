@@ -34,8 +34,8 @@ const Navbar = ({
   return (
     <nav
       className={cn(
-        `${position} top-0 z-50 h-[10vh] w-full pt-4 md:pt-10`,
-        pathname === "/" ? "bg-transparent" : "pt-4 md:pt-5",
+        `${position} top-0 z-50 h-[10vh] w-full pt-4`,
+        pathname === "/" ? "bg-transparent" : "pt-4",
       )}
     >
       {/*big screen */}
@@ -48,17 +48,17 @@ const Navbar = ({
                 width={281}
                 height={74}
                 alt="logo"
-                className="w-32"
+                className="w-20"
               />
             </Link>
           </div>
-          <div className="flex flex-row items-center justify-center gap-20">
+          <div className="flex flex-row items-center justify-center gap-16">
             <Link
               href={"/"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                  : "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#000] hover:text-[#c19d56] hover:underline"
               }
             >
               Home
@@ -67,28 +67,19 @@ const Navbar = ({
               href={"/menu"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                  : "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#000] hover:text-[#c19d56] hover:underline"
               }
             >
               Menu
             </Link>
-            {/* <Link
-              href={""}
-              className={
-                pathname === "/"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
-              }
-            >
-              FOOD & DRINK
-            </Link> */}
+
             <Link
               href={"/about-us"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                  : "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#000] hover:text-[#c19d56] hover:underline"
               }
             >
               Our Story
@@ -98,17 +89,29 @@ const Navbar = ({
               href={"/contact"}
               className={
                 pathname === "/" || pathname === "/table-booking"
-                  ? "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#fff]"
-                  : "text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#000]"
+                  ? "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                  : "font-montserrat text-center text-xs font-[500] uppercase tracking-[2px] text-[#000] hover:text-[#c19d56] hover:underline"
               }
             >
               Contact
             </Link>
-          </div>
-          <div>
-            <Button className="rounded-none bg-[#A98151] px-5 py-6 text-center font-cormorant text-xs font-[700] uppercase tracking-[4px] text-[#fff] hover:bg-[#e9b87c] md:px-7 md:py-7 md:text-sm">
-              <Link href={"/table-booking"}>Book Now</Link>
-            </Button>
+            <div>
+              <Button className="font-montserrat rounded-none bg-[#C19D56] px-5 py-6 text-center text-xs font-[500] uppercase tracking-[2px] text-[#fff] ring-1 ring-[#C19D56] hover:bg-[#e9b87c] md:px-5 md:py-6">
+                <Link href={"/table-booking"}>Book Now</Link>
+              </Button>
+            </div>
+            <div>
+              <Sidebar>
+                <Button
+                  variant="ghost"
+                  className="flex px-1 py-1 text-primary hover:bg-transparent hover:text-primary"
+                >
+                  <div className="flex flex-row gap-2">
+                    <EqualizerIcon />
+                  </div>
+                </Button>
+              </Sidebar>{" "}
+            </div>
           </div>
         </div>
       </div>
@@ -123,7 +126,7 @@ const Navbar = ({
                 width={281}
                 height={74}
                 alt="logo"
-                className="w-20"
+                className="w-14"
               />
             </Link>
           </div>
@@ -153,13 +156,22 @@ const EqualizerIcon: React.FC = () => {
   return (
     <div className="equalizer-icon rotate">
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx(
+          "bar",
+          pathname === "/" ? "bg-[#C19C55]" : "bg-[#079EBC]",
+        )}
       ></div>
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx(
+          "bar",
+          pathname === "/" ? "bg-[#C19C55]" : "bg-[#079EBC]",
+        )}
       ></div>
       <div
-        className={clsx("bar", pathname === "/" ? "bg-[#fff]" : "bg-[#194129]")}
+        className={clsx(
+          "bar",
+          pathname === "/" ? "bg-[#C19C55]" : "bg-[#079EBC]",
+        )}
       ></div>
     </div>
   );

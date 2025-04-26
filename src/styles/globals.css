@@ -94,13 +94,13 @@
 
   --menubackground: 0, 0%, 100%;
   --menuforeground: 0, 0%, 0%;
-  --menuprimary: 37, 36%, 65%;
+  --menuprimary: 0, 0%, 100%;
   --menusecondary: 0, 2%, 97%;
   --buttonhover: 37, 32%, 50%;
-  --itembackground: 33, 35%, 49%;
+  --itembackground: 189.94, 92.82%, 38.24%;
   --menuprimaryforeground: 39, 100%, 93%;
-  --menusecondaryforeground: 0, 0%, 100%;
-  --itemdescription: 0, 0%, 0%;
+  --menusecondaryforeground: 0, 0%, 0%;
+  --itemdescription: 0, 0%, 100%;
   --itembutton: 37, 36%, 65%;
   --buttondisabled: 0, 0%, 29%;
   --mobilebg: 0, 0%, 100%;

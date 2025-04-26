@@ -17,6 +17,7 @@ export default {
         marcellus: ["var(--font-marcellus)", ...fontFamily.sans],
         playfair: ["var(--font-playfair)", ...fontFamily.sans],
         cormorant: ["var(--font-cormorant)", ...fontFamily.sans],
+        montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
       },
       borderRadius: {
         lg: "var(--radius)",

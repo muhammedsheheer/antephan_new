@@ -273,7 +273,7 @@ export default function MenuMobile() {
                     "h-12 shrink-0 rounded-none text-base font-extrabold transition-colors",
                     activeCategory === category._id
                       ? "bg-menuprimary text-menuforeground hover:bg-buttonhover hover:text-menuforeground"
-                      : "border-[1px] border-menuprimary bg-transparent text-menuprimary hover:bg-transparent hover:text-menuprimary",
+                      : "border-[1px] border-menuprimary bg-itembackground text-menuprimary hover:bg-transparent hover:text-menuprimary",
                     category.items.length === 0 && "hidden pb-0",
                   )}
                 >

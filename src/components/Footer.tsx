@@ -5,123 +5,212 @@ import { Icons } from "./Icon";
 
 const Footer = ({}) => {
   return (
-    <footer className="h-full w-full bg-[#194129] px-4 py-12 md:py-20 lg:px-40">
-      <div className="flex flex-col gap-6 md:ml-[4%] md:gap-8">
-        <div className="flex flex-col items-center justify-center gap-6 md:mr-[8%] md:flex-row md:gap-24">
-          <Link
-            href={"/"}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Home
-          </Link>
-          <Link
-            href={"/menu"}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Menu
-          </Link>
-          <Link
-            href={"/about-us"}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Our Story
-          </Link>
+    <footer className="h-full w-full bg-[#002A32] px-4 py-12 md:py-20 lg:px-20">
+      {/*mobile screen */}
+      <div className="flex flex-col items-center justify-center gap-14 md:hidden">
+        <div className="flex flex-col items-center justify-center gap-2">
           <Link href={"/"}>
             <Image
               src={"/images/home/hero/logo.png"}
               width={281}
               height={74}
               alt="logo"
-              className="w-32 md:mx-10"
+              className="w-20 md:w-28"
             />
           </Link>
-
-          {/* <Link
-            href={""}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Reorder
-          </Link>
-          <Link
-            href={""}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Reviews
-          </Link> */}
-          <Link
-            href={"/table-booking"}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
-            Booking
-          </Link>
-          <Link
-            href={"/contact"}
-            className="text-center font-playfair text-xs font-[600] uppercase tracking-[0.96px] text-[#A98151]"
-          >
+          <h2 className="text-center font-montserrat text-lg font-[600] uppercase tracking-[0.888px] text-[#fff] md:text-xl">
+            Special Taste <br /> from Gaziantep
+          </h2>
+        </div>
+        <div className="flex flex-row items-center justify-center gap-10">
+          <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+            <Link href={"#"} target="_blank">
+              <Icons.instagram className="-rotate-45 text-[#C19D56]" />
+            </Link>
+          </div>
+          <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+            <Link href={"#"} target="_blank">
+              <Icons.facebook className="-rotate-45 text-[#C19D56]" />
+            </Link>
+          </div>
+          <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+            <Link href={"#"} target="_blank">
+              <Icons.google className="-rotate-45 text-[#C19D56]" />
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h2 className="text-center font-montserrat text-lg font-[600] uppercase tracking-[0.888px] text-[#fff] md:text-xl">
             Contact
-          </Link>
-        </div>
-        <div className="flex flex-row items-center justify-center gap-4">
-          <Link
-            href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
-            target="_blank"
-          >
-            <Icons.instagram className="text-[#A98151]" />
-          </Link>
-          <Link
-            href={"https://www.facebook.com/p/Mevlana-Bolton-61560019979761/"}
-            target="_blank"
-          >
-            <Icons.facebook className="text-[#A98151]" />
-          </Link>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-12">
-          <div className="flex flex-col justify-center gap-28 md:flex-row md:justify-between">
-            <div className="flex flex-col items-center justify-center gap-2">
-              <h6 className="font-playfair text-base font-[600] capitalize tracking-[0.48px] text-[#fff] md:text-lg">
-                Hours of Operation
-              </h6>
-              <p className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base">
-                Mon-Thu: 11:30am-10:00pm, <br />
-                Fri-Sun: 11:30am-11:00pm
-              </p>
-            </div>
-            <div className="hidden h-[100px] border-r-[1px] border-r-[#A98151] md:block" />
+          </h2>
+          <div className="flex flex-col items-center justify-center gap-1">
+            <Link
+              className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
+              href={""}
+            >
+              240 Hertford Road Enfield EN3 5BL
+            </Link>
+            <span className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              08:00-23:00 OPEN EVERYDAY
+            </span>
+            <Link
+              className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
+              href={""}
+            >
+              Phone:02083749043
+            </Link>
           </div>
-          <div className="flex flex-col justify-center gap-28 md:flex-row md:justify-between">
-            <div className="flex flex-col items-center justify-center gap-2 md:mx-6">
-              <h6 className="font-playfair text-base font-[600] capitalize tracking-[0.48px] text-[#fff] md:text-lg">
-                Address{" "}
-              </h6>
-              <Link
-                href={"https://g.co/kgs/NyQnxGj"}
-                target="_blank"
-                className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
-              >
-                Horsfield St, Bolton BL3 4LU, United Kingdom{" "}
+        </div>
+        <div className="flex flex-row items-center justify-between gap-8">
+          <Link href={"/"}>
+            <Image
+              src={"/images/home/hero/frame1.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="w-48 md:w-40"
+            />
+          </Link>
+          <Link href={"/"}>
+            <Image
+              src={"/images/home/hero/frame2.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="w-48 md:w-40"
+            />
+          </Link>
+        </div>
+      </div>
+      {/*big screen */}
+      <div className="hidden flex-row items-center justify-between md:flex">
+        <div className="flex flex-col items-start justify-start gap-4">
+          <h2 className="text-center font-montserrat text-lg font-[600] uppercase tracking-[0.888px] text-[#fff]">
+            Contact
+          </h2>
+          <div className="flex flex-col items-start justify-start gap-1">
+            <Link
+              className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
+              href={"https://g.co/kgs/oTZfr5e"}
+            >
+              240 Hertford Rd, London EN3 <br /> 5BL, United Kingdom
+            </Link>
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              08:00-23:00 OPEN EVERYDAY
+            </span>
+            <Link
+              className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
+              href={"tel:+442083749043"}
+            >
+              Phone:+44 20 8374 9043
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-28">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col items-center justify-center gap-2">
+              <Link href={"/"}>
+                <Image
+                  src={"/images/home/hero/logo.png"}
+                  width={281}
+                  height={74}
+                  alt="logo"
+                  className="w-20 md:w-28"
+                />
               </Link>
+              <h2 className="text-center font-montserrat text-lg font-[600] uppercase tracking-[0.888px] text-[#fff] md:text-xl">
+                Special Taste <br /> from Gaziantep
+              </h2>
+              <Image
+                src={"/images/home/hero/line.svg"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="w-20 md:w-28"
+              />
             </div>
-          </div>
-          <div className="flex flex-col justify-center gap-28 md:flex-row md:justify-between">
-            <div className="hidden h-[100px] border-r-[1px] border-r-[#A98151] md:block" />
-            <div className="flex flex-col items-center justify-center gap-2">
-              <h6 className="font-playfair text-base font-[600] capitalize tracking-[0.48px] text-[#fff] md:text-lg">
+            <div className="flex flex-row items-center justify-center gap-16">
+              <Link
+                href={"/"}
+                className={
+                  "text-center font-montserrat text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                }
+              >
+                Home
+              </Link>
+              <Link
+                href={"/menu"}
+                className={
+                  "text-center font-montserrat text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                }
+              >
+                Menu
+              </Link>
+
+              <Link
+                href={"/about-us"}
+                className={
+                  "text-center font-montserrat text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                }
+              >
+                Our Story
+              </Link>
+
+              <Link
+                href={"/contact"}
+                className={
+                  "text-center font-montserrat text-xs font-[500] uppercase tracking-[2px] text-[#fff] hover:text-[#c19d56] hover:underline"
+                }
+              >
                 Contact
-              </h6>
-              <Link
-                href={"tel:+441204860038"}
-                className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
-              >
-                +44 1204 860038{" "}
-              </Link>
-              <Link
-                href={"mailto:info@mevlanabolton.com"}
-                className="text-center font-playfair text-sm font-[400] tracking-[0.44px] text-[#A98151] md:text-base"
-              >
-                info@mevlanabolton.com
               </Link>
             </div>
+            <div className="flex flex-row items-center justify-center gap-10 pt-6">
+              <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+                <Link
+                  href={"https://www.instagram.com/antephan.baklava.uk/"}
+                  target="_blank"
+                >
+                  <Icons.instagram className="-rotate-45 text-[#C19D56]" />
+                </Link>
+              </div>
+              {/* <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+                <Link href={"#"} target="_blank">
+                  <Icons.facebook className="-rotate-45 text-[#C19D56]" />
+                </Link>
+              </div> */}
+              <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
+                <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
+                  <Icons.google className="-rotate-45 text-[#C19D56]" />
+                </Link>
+              </div>
+            </div>
           </div>
+          <div className="flex items-center justify-center">
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              © 2025 Antephankunefe , All Rights Reserved
+            </span>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-16">
+          <Link href={"https://g.co/kgs/oTZfr5e"}>
+            <Image
+              src={"/images/home/hero/frame1.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="w-48 md:w-60"
+            />
+          </Link>
+          <Link href={"/menu"}>
+            <Image
+              src={"/images/home/hero/frame2.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="w-48 md:w-60"
+            />
+          </Link>
         </div>
       </div>
     </footer>

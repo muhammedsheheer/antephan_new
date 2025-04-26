@@ -78,7 +78,7 @@ const Contact = ({}) => {
               {/* <p className="font-bai text-lg leading-[4px] text-[#194129]">
                 Contact Us
               </p> */}
-              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#194129] md:leading-[50px] lg:text-5xl">
+              <h1 className="font-marcellus text-4xl font-medium uppercase tracking-[5px] text-[#079EBC] md:leading-[50px] lg:text-5xl">
                 Get in
                 <br /> Touch
               </h1>
@@ -87,20 +87,19 @@ const Contact = ({}) => {
               <div className="flex gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <MapPin className="text-[#679895]" />
+                    <MapPin className="text-[#079EBC]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="font-playfair text-[#679895]">
-                      Horsfield St, Bolton BL3 4LU,
-                      <br /> United Kingdom
+                  <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
+                    <p className="font-playfair text-[#079EBC]">
+                      240 Hertford Rd, London EN3 <br /> 5BL, United Kingdom
                     </p>
                   </Link>
-                  <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                    <p className="flex items-center gap-2 text-sm text-[#679895]">
+                  <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
+                    <p className="flex items-center gap-2 text-sm text-[#079EBC]">
                       <span className="font-playfair">Get Direction</span>
-                      <ArrowRight className="text-[#679895]" />
+                      <ArrowRight className="text-[#079EBC]" />
                     </p>
                   </Link>
                 </div>
@@ -118,35 +117,35 @@ const Contact = ({}) => {
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Phone className="text-[#679895]" />
+                    <Phone className="text-[#079EBC]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link
-                    href="tel:+441204860038"
-                    className="font-playfair text-[#679895]"
+                    href="tel:+442083749043"
+                    className="font-playfair text-[#079EBC]"
                   >
-                    +44 1204 860038{" "}
+                    +44 20 8374 9043
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
                 <Link
-                  href={"https://www.instagram.com/mevlana_bolton/?hl=en"}
+                  href={"https://www.instagram.com/antephan.baklava.uk/"}
                   target="_blank"
                 >
-                  <Icons.instagram className="text-[#679895]" />
+                  <Icons.instagram className="text-[#079EBC]" />
                 </Link>
-                <Link
+                {/* <Link
                   href={
                     "https://www.tripadvisor.in/ShowUserReviews-g187053-d30464254-r985280947-Mevlana_Bolton-Bolton_Greater_Manchester_England.html"
                   }
                   target="_blank"
                 >
-                  <Icons.unknown className="text-[#679895]" />
-                </Link>
-                <Link href={"https://g.co/kgs/NyQnxGj"} target="_blank">
-                  <Icons.google className="text-[#679895]" />
+                  <Icons.unknown className="text-[#079EBC]" />
+                </Link> */}
+                <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
+                  <Icons.google className="text-[#079EBC]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
                   <Icons.facebook />
@@ -213,7 +212,7 @@ const Contact = ({}) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel className="font-playfair text-[#679895]">
+                            <FormLabel className="font-playfair text-[#079EBC]">
                               Reason for contacting (optional)
                             </FormLabel>
                             <FormControl>
@@ -231,7 +230,7 @@ const Contact = ({}) => {
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#A98151] py-6 text-white hover:bg-[#e9b87c] hover:text-[#fff]"
+                      className="font-bai w-full rounded-2xl bg-[#079EBC] py-6 text-white hover:bg-[#1bd9ff] hover:text-[#fff]"
                       disabled={bookTableMutation.isPending}
                     >
                       Contact US
@@ -243,7 +242,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.2043845604217!2d-2.467085523398032!3d53.5677202723543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba75750cbd5b9%3A0xfcde2517b593e215!2sMevlana%2C%20Bolton!5e1!3m2!1sen!2sin!4v1742995261619!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.6165447916774!2d-0.047487400000000006!3d51.658343900000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761f4f21fc8d2d%3A0xe038868bb0e09aac!2sANTEPHAN%20Baklava%20-%20Kunefe%20-%20Cake!5e1!3m2!1sen!2sin!4v1745666772768!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -254,7 +253,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image3.jpg"
+          src="/images/about-us/5.jpeg"
           alt="bottom"
           width={966}
           height={96}

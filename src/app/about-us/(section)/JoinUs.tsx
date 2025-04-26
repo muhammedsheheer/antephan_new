@@ -7,7 +7,7 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center"
       style={{
-        backgroundImage: `url('/images/about-us/image8.jpg')`,
+        backgroundImage: `url('/images/about-us/4.jpeg')`,
         backgroundSize: "cover",
       }}
     >
@@ -20,13 +20,14 @@ const JoinUs = ({}) => {
             Savor Every Moment
           </h1>
           <p className="max-w-[450px] text-center font-playfair font-[500] leading-[160%] text-[#ffff]">
-            In the spirit of Mevlana’s wisdom, we welcome you to a place where
-            food transcends nourishment—it becomes an expression of unity, love,
-            and gratitude. Whether you’re seeking a quiet evening of reflection
-            or a joyful gathering with loved ones, each dish is prepared with
+            Inspired by the spirit of Antephan, we welcome you to a place where
+            food transcends mere nourishment — becoming an expression of unity,
+            love, and gratitude. Whether you seek a quiet evening of reflection
+            or a joyful gathering with loved ones, every dish is crafted with
             care, every flavor tells a story, and every moment invites you to
-            embrace the present with open heart and soul.
+            embrace the present with an open heart and soul.
           </p>
+
           <Link href={"/table-booking"}>
             <Button
               variant="outline"
