@@ -133,8 +133,23 @@ const Hero: React.FC = () => {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden bg-[url('/images/home/hero/bg1.png')] bg-cover bg-center md:bg-[url('/images/home/hero/bg.png')]"
+      className="relative h-screen w-full overflow-hidden"
     >
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+        poster="https://d8q1b3smcycac.cloudfront.net/antephan/antephan-thumbnail.png"
+      >
+        <source
+          src="
+https://d8q1b3smcycac.cloudfront.net/antephan/antephan-web.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute inset-0 bg-[rgba(0,0,0,0.43)]" />
 
       <div className="relative flex h-full w-full flex-col items-center justify-center gap-6 md:gap-8">
@@ -153,7 +168,7 @@ const Hero: React.FC = () => {
             ))}
         </h1>
 
-        <Button className="font-montserrat rounded-none bg-[#079EBC] px-6 py-6 text-center text-sm font-[500] uppercase tracking-[1.276px] text-[#fff] hover:bg-[#3994a6] md:hidden md:px-7 md:py-7">
+        <Button className="rounded-none bg-[#079EBC] px-6 py-6 text-center font-montserrat text-sm font-[500] uppercase tracking-[1.276px] text-[#fff] hover:bg-[#3994a6] md:hidden md:px-7 md:py-7">
           <Link href={"/table-booking"}>Book Now</Link>
         </Button>
       </div>
