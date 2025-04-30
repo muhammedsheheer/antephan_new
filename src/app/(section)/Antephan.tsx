@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const Antephan: React.FC = () => {
   return (
@@ -24,15 +25,18 @@ const Antephan: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <Image
-              src={"/images/home/antephan/1.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="z-50 h-auto w-full"
-            />
+            <Link href={"/menu"} className="z-50 h-auto w-full">
+              <Image
+                src={"/images/home/antephan/1.png"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="z-50 h-auto w-full"
+              />
+            </Link>
+
             <h4
-              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
+              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
               style={{ fontVariant: "small-caps" }}
             >
               Baklava
@@ -45,18 +49,21 @@ const Antephan: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <Image
-              src={"/images/home/antephan/2.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="z-50 h-auto w-full"
-            />
+            <Link className="z-50 h-auto w-full" href={"/menu"}>
+              <Image
+                src={"/images/home/antephan/2.png"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="z-50 h-auto w-full"
+              />
+            </Link>
+
             <h4
-              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
+              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
               style={{ fontVariant: "small-caps" }}
             >
-              KUNEFE
+              Kunefe
             </h4>
           </motion.div>
           <motion.div
@@ -66,18 +73,21 @@ const Antephan: React.FC = () => {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            <Image
-              src={"/images/home/antephan/3.png"}
-              width={281}
-              height={74}
-              alt="logo"
-              className="z-50 h-auto w-full"
-            />
+            <Link className="z-50 h-auto w-full" href={"/menu"}>
+              <Image
+                src={"/images/home/antephan/3.png"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="z-50 h-auto w-full"
+              />
+            </Link>
+
             <h4
-              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-xl"
+              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
               style={{ fontVariant: "small-caps" }}
             >
-              Antephan SPECIALS
+              Cake
             </h4>
           </motion.div>
         </div>

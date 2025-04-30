@@ -33,39 +33,46 @@ const Highlights: React.FC = () => {
           </h1>
         </div>
         <div className="flex flex-row items-center justify-center gap-2 md:gap-14">
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/1b.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/2b.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/3b.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/1b.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
+
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/2b.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/3b.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
         </div>
         <motion.div
           className="z-50 flex flex-col items-center justify-center gap-4 md:gap-6"
@@ -96,39 +103,46 @@ const Highlights: React.FC = () => {
           </h1>
         </div>
         <div className="flex flex-row items-center justify-center gap-2 md:gap-14">
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/1s.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/2s.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
-          <motion.img
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-            src={"/images/home/highlights/3s.png"}
-            width={281}
-            height={74}
-            alt="logo"
-            className="z-50 h-auto w-full"
-          />
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/1s.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/2s.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
+
+          <Link className="z-50" href={"/menu"}>
+            <motion.img
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: false }}
+              src={"/images/home/highlights/3s.png"}
+              width={281}
+              height={74}
+              alt="logo"
+              className="z-50 h-auto w-full"
+            />
+          </Link>
         </div>
         <motion.div
           className="z-50 flex flex-col items-center justify-center gap-4 md:gap-6"

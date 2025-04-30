@@ -49,10 +49,12 @@ const Follow: React.FC = () => {
                 alt="logo"
                 className="w-12"
               /> */}
-              <Icons.instagram className="h-24 w-24 text-[#079EBC]" />
+              <Link href={"https://www.instagram.com/antephan.baklava.uk/"}>
+                <Icons.instagram className="h-24 w-24 text-[#079EBC]" />
+              </Link>
               <div>
                 <Link
-                  href={"#"}
+                  href={"https://www.instagram.com/antephan.baklava.uk/"}
                   target="_blank"
                   className="text-md text-center font-playfair font-[400] uppercase text-[#000] md:text-xl"
                 >
@@ -178,10 +180,12 @@ const Follow: React.FC = () => {
                 alt="logo"
                 className="w-12"
               /> */}
-              <Icons.instagram className="h-24 w-24 text-[#079EBC]" />
+              <Link href={"https://www.instagram.com/antephan.baklava.uk/"}>
+                <Icons.instagram className="h-24 w-24 text-[#079EBC]" />
+              </Link>
               <div>
                 <Link
-                  href={"#"}
+                  href={"https://www.instagram.com/antephan.baklava.uk/"}
                   target="_blank"
                   className="text-md text-center font-playfair font-[400] uppercase text-[#000] md:text-xl"
                 >
