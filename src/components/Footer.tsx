@@ -81,6 +81,16 @@ const Footer = ({}) => {
             />
           </Link>
         </div>
+        <div className="flex flex-col items-center justify-center gap-2">
+          <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+            © 2025 Antephankunefe , All Rights Reserved
+          </span>
+          <Link href={"https://foodo.ai"} target="_blank">
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              Powerd By Foodo
+            </span>
+          </Link>
+        </div>
       </div>
       {/*big screen */}
       <div className="hidden flex-row items-center justify-between md:flex">
@@ -186,10 +196,15 @@ const Footer = ({}) => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-2">
             <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
               © 2025 Antephankunefe , All Rights Reserved
             </span>
+            <Link href={"https://foodo.ai"} target="_blank">
+              <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+                Powerd By Foodo
+              </span>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center gap-16">
