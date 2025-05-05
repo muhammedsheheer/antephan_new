@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icons } from "./Icon";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = ({}) => {
   return (
@@ -24,17 +25,23 @@ const Footer = ({}) => {
         </div>
         <div className="flex flex-row items-center justify-center gap-10">
           <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
-            <Link href={"#"} target="_blank">
+            <Link
+              href={"https://www.instagram.com/antephan.baklava.uk/"}
+              target="_blank"
+            >
               <Icons.instagram className="-rotate-45 text-[#C19D56]" />
             </Link>
           </div>
-          <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
-            <Link href={"#"} target="_blank">
-              <Icons.facebook className="-rotate-45 text-[#C19D56]" />
+          <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-3">
+            <Link
+              href={" https://www.tiktok.com/@antephan2024"}
+              target="_blank"
+            >
+              <FaTiktok size={28} className="-rotate-45 text-[#C19D56]" />
             </Link>
           </div>
           <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
-            <Link href={"#"} target="_blank">
+            <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
               <Icons.google className="-rotate-45 text-[#C19D56]" />
             </Link>
           </div>
@@ -46,7 +53,7 @@ const Footer = ({}) => {
           <div className="flex flex-col items-center justify-center gap-1">
             <Link
               className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
-              href={""}
+              href={"https://g.co/kgs/oTZfr5e"}
             >
               240 Hertford Road Enfield EN3 5BL
             </Link>
@@ -55,9 +62,9 @@ const Footer = ({}) => {
             </span>
             <Link
               className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
-              href={""}
+              href={"tel:+442083749043"}
             >
-              Phone:02083749043
+              Phone:+44 20 8374 9043
             </Link>
           </div>
         </div>
@@ -184,11 +191,14 @@ const Footer = ({}) => {
                   <Icons.instagram className="-rotate-45 text-[#C19D56]" />
                 </Link>
               </div>
-              {/* <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
-                <Link href={"#"} target="_blank">
-                  <Icons.facebook className="-rotate-45 text-[#C19D56]" />
+              <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-3">
+                <Link
+                  href={" https://www.tiktok.com/@antephan2024"}
+                  target="_blank"
+                >
+                  <FaTiktok size={28} className="-rotate-45 text-[#C19D56]" />
                 </Link>
-              </div> */}
+              </div>
               <div className="rotate-45 border-2 border-[#C19D56] bg-transparent p-1">
                 <Link href={"https://g.co/kgs/oTZfr5e"} target="_blank">
                   <Icons.google className="-rotate-45 text-[#C19D56]" />
