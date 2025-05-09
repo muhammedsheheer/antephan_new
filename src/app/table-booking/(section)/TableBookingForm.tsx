@@ -25,7 +25,7 @@ export default function TableBookingForm() {
       guests: "",
       time: "",
       request: "",
-      place: "",
+      
     },
   });
 
