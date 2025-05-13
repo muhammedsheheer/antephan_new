@@ -57,8 +57,11 @@ const Footer = ({}) => {
             >
               240 Hertford Road Enfield EN3 5BL
             </Link>
-            <span className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
-              08:00-23:00 OPEN EVERYDAY
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              OPEN EVERYDAY
+            </span>
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              Time 08:00-23:00
             </span>
             <Link
               className="text-center font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
@@ -113,7 +116,10 @@ const Footer = ({}) => {
               240 Hertford Rd, London EN3 <br /> 5BL, United Kingdom
             </Link>
             <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
-              08:00-23:00 OPEN EVERYDAY
+              OPEN EVERYDAY
+            </span>
+            <span className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base">
+              Time 08:00-23:00
             </span>
             <Link
               className="text-start font-cormorant text-base font-[400] text-[#C8C8C8] md:text-base"
