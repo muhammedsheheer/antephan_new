@@ -167,18 +167,18 @@ import { motion } from "framer-motion";
 
 const menuData = {
   food: [
-    { name: "Beef Burger Meal", price: 32 },
-    { name: "Roasted Lamb Rump", price: 25 },
-    { name: "Pan Seared Sea Bass", price: 38 },
-    { name: "King Prawns and Lobster", price: 38 },
-    { name: "Citrus Cured Salmon", price: 41 },
+    { name: "BAKLAVA", price: 7.5 },
+    { name: "SOGUK BAKLAVA", price: 8.5 },
+    { name: "KURU BAKLAVA", price: 7.5 },
+    { name: "HAVUC DILIM", price: 4.5 },
+    { name: "SOBIYET", price: 7.5 },
   ],
   drinks: [
-    { name: "Pan Seared Scallops", price: 29 },
-    { name: "Baked Camembert", price: 25 },
-    { name: "Braised Ox Cheek Ravioli", price: 23 },
-    { name: "Corn Fed Chicken", price: 17 },
-    { name: "Nduja Pork Chicken Terrine", price: 41 },
+    { name: "BULBUL YUVASI", price: 7.5 },
+    { name: "DODURMALI KUNEFE", price: 12 },
+    { name: "SIMIT KATMER", price: 12 },
+    { name: "SUPANGLE", price: 4.5 },
+    { name: "FISTIKLI FRAISIER", price: 5 },
   ],
 };
 
