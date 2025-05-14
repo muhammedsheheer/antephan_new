@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Story: React.FC = () => {
   return (
-    <section className="relative h-full w-full bg-[#fff] px-4 pb-12 pt-32 md:px-8 md:pb-24 md:pt-52">
+    <section className="relative h-full w-full bg-[#fff] px-4 pb-12 pt-40 md:px-8 md:pb-24 md:pt-64">
       {/* big screen */}
       <div className="absolute left-2 right-2 top-8 z-40 md:left-10 md:right-10 md:top-16">
         <h1 className="text-center font-playfair text-4xl font-[400] uppercase tracking-[3px] text-[#000] md:text-8xl md:tracking-[5px]">
@@ -31,11 +31,11 @@ const Story: React.FC = () => {
         </motion.div>
         <div className="z-50 w-full md:w-[60%]">
           <motion.img
-            src={"/images/home/story/imageb.png"}
+            src={"/images/home/story/image.jpg"}
             width={160}
             height={160}
             alt="logo"
-            className="z-50 h-auto w-full object-cover md:h-full"
+            className="z-50 h-auto w-full object-cover md:h-[500px]"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
@@ -66,11 +66,11 @@ const Story: React.FC = () => {
       <div className="flex flex-col items-center justify-center gap-5 md:hidden">
         <div className="z-50 w-full md:w-[60%]">
           <motion.img
-            src={"/images/home/story/imageb.png"}
+            src={"/images/home/story/image.jpg"}
             width={160}
             height={160}
             alt="logo"
-            className="z-50 h-auto w-full object-cover md:h-full"
+            className="z-50 h-[150] w-full object-cover md:h-full"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}

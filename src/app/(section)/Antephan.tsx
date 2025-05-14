@@ -27,59 +27,11 @@ const Antephan: React.FC = () => {
           >
             <Link href={"/menu"} className="z-50 h-auto w-full">
               <Image
-                src={"/images/home/antephan/1.png"}
+                src={"/images/home/antephan/4.jpg"}
                 width={281}
                 height={74}
                 alt="logo"
-                className="z-50 h-auto w-full"
-              />
-            </Link>
-
-            <h4
-              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
-              style={{ fontVariant: "small-caps" }}
-            >
-              Baklava
-            </h4>
-          </motion.div>
-          <motion.div
-            className="flex w-[33%] flex-col items-start justify-start gap-4 md:gap-6"
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-          >
-            <Link className="z-50 h-auto w-full" href={"/menu"}>
-              <Image
-                src={"/images/home/antephan/2.png"}
-                width={281}
-                height={74}
-                alt="logo"
-                className="z-50 h-auto w-full"
-              />
-            </Link>
-
-            <h4
-              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
-              style={{ fontVariant: "small-caps" }}
-            >
-              Kunefe
-            </h4>
-          </motion.div>
-          <motion.div
-            className="flex w-[33%] flex-col items-start justify-start gap-4 md:gap-6"
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: false }}
-          >
-            <Link className="z-50 h-auto w-full" href={"/menu"}>
-              <Image
-                src={"/images/home/antephan/3.png"}
-                width={281}
-                height={74}
-                alt="logo"
-                className="z-50 h-auto w-full"
+                className="z-50 h-[150px] w-full md:h-[350px]"
               />
             </Link>
 
@@ -88,6 +40,54 @@ const Antephan: React.FC = () => {
               style={{ fontVariant: "small-caps" }}
             >
               Cake
+            </h4>
+          </motion.div>
+          <motion.div
+            className="flex w-[33%] flex-col items-start justify-start gap-4 md:gap-6"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+          >
+            <Link className="z-50 h-[150px] w-full md:h-[350px]" href={"/menu"}>
+              <Image
+                src={"/images/home/antephan/2.jpg"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="z-50 h-[150px] w-full md:h-[350px]"
+              />
+            </Link>
+
+            <h4
+              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
+              style={{ fontVariant: "small-caps" }}
+            >
+              Cookie
+            </h4>
+          </motion.div>
+          <motion.div
+            className="flex w-[33%] flex-col items-start justify-start gap-4 md:gap-6"
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+          >
+            <Link className="z-50 h-[150px] w-full md:h-[350px]" href={"/menu"}>
+              <Image
+                src={"/images/home/antephan/3.jpg"}
+                width={281}
+                height={74}
+                alt="logo"
+                className="z-50 h-[150px] w-full md:h-[350px]"
+              />
+            </Link>
+
+            <h4
+              className="font-playfair text-lg font-[400] tracking-[1px] text-[#fff] md:text-2xl"
+              style={{ fontVariant: "small-caps" }}
+            >
+              Macarons
             </h4>
           </motion.div>
         </div>
